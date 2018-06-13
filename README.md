@@ -1,0 +1,2 @@
+# programming_priciples_and_practice_exercices_solved
+Solved exercices from Programming_principles_and_practice_using_c++_2nd_edition 
