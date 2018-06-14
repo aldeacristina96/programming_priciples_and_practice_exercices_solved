@@ -21,13 +21,16 @@ int main()
     vector<int>v(4);
     vector <int> uI;
     int a=0,b;
+    char choice='y';
 
 
     srand(time(NULL));
-    random_values(v);
-    cout<<"To begin the game eneter 4 different integer numbers between 0-9."<<endl;
     try
     {
+    while(choice== 'y'){
+    random_values(v);
+    cout<<"To begin the game eneter 4 different integer numbers between 0-9."<<endl;
+
         while(a<4)
         {
             cin>>b;
@@ -45,20 +48,17 @@ int main()
         }
         cout<<"User generated vector: ";
         printVector(uI);
-        /*
-        cout<<"Computer geneated vector: ";
-        printVector(v);*/
-
         check(v,uI);
+        cout<<"Computer geneated vector: ";
+        printVector(v);
 
-
-
-
-
-
-
+    cout<<"Do you want to play again? y/n "<<endl;
+    cin>>choice;
 
     }
+
+    }
+
     catch(runtime_error &e)
     {
         cout<<e.what()<<endl;
@@ -126,8 +126,6 @@ void check(vector<int> v,vector<int> uI)
     }
     cout<<"Cows: "<<cows<<endl;
     cout<<"Bulls: "<<bulls<<endl;
-
-
 
 
 }
