@@ -137,7 +137,7 @@ void printVector(vector<int> v)
     cout<<"Vector: ";
     for(int i=0; i<4; i++)
     {
-        cout<<v[i]<<" | "
+        cout<<v[i]<<" | ";
     }
     cout<<endl;
 }
